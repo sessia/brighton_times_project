@@ -1,0 +1,63 @@
+.header__menu {
+  display: none;
+}
+
+@media screen and (max-width:526px){
+  .header__logo {
+    max-height: 50px;
+    margin-right: 0;
+  }
+
+  .header__title {
+    max-height: 50px;
+    font-size:2.3em;
+  }
+
+  .nav {
+    z-index: 10;
+    width: 200px;
+    position: absolute;
+    -webkit-transform: translate(-200px, 0);
+    transform: translate(-200px, 0);
+    transition: transform 0.3s ease;
+    background-color: #000;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 0.2px solid #c00;
+    width: 100%;
+  /*  text-align: left;*/
+  }
+
+.header__menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 1em;
+  margin-top: 0.5em;
+  vertical-align: middle;
+  }
+}
+
+@media screen and (min-width:800px){
+  .hero{
+  width: 70%;
+  }
+
+  .top-news{
+  width: 30%;
+  }
+
+  .scores{
+  width: 60%;
+  }
+
+  .weather{
+  width: 40%;
+  }
+}
